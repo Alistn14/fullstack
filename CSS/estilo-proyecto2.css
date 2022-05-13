@@ -6,11 +6,17 @@ body{
     margin: 0%;
 }
 
+h3{
+    text-decoration: overline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 .main-header {background-color: #2ddf5c;
     padding: 8px 16px;
     width: 100%;
     display: inline-block;
     color:black;
+    text-align: center;
 
 }
 li.main-nav { 
@@ -31,5 +37,6 @@ header.main-header {
     background-color: blueviolet;
 }
 .main-header > div {
+    text-align: center;
 display: inline-block;
 }

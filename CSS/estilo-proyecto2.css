@@ -1,0 +1,35 @@
+* {
+box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+}
+
+.main-header {background-color: #2ddf5c;
+    padding: 8px 16px;
+    width: 100%;
+    display: inline-block;
+    color:black;
+
+}
+li.main-nav { 
+    display: inline-block;
+    background-color: orange;
+}
+
+ul.main-nav {
+    display: inline-block;
+    background-color: aquamarine;
+}
+nav.main-nav
+{
+    display: inline-block;
+    background-color: beige;
+}
+header.main-header {
+    background-color: blueviolet;
+}
+.main-header > div {
+display: inline-block;
+}

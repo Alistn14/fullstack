@@ -1,0 +1,21 @@
+h2 + p {
+    color: red;
+    }
+    
+
+h2 ~ p {
+    color: olive;
+
+    }
+
+    div > p {
+        color:green;
+        }
+
+        p{
+            color: blue;
+        }
+        div p{
+            color: palevioletred;
+        }
+        

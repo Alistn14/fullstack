@@ -4,7 +4,13 @@ box-sizing: border-box;
 
 body{
     margin: 0%;
+
 }
+
+h1{text-decoration: underline;
+text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: bold;}
 
 h3{
     text-decoration: overline;
@@ -39,4 +45,12 @@ header.main-header {
 .main-header > div {
     text-align: center;
 display: inline-block;
+}
+
+p.separacionlinea {
+    line-height: 1.5;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
 }

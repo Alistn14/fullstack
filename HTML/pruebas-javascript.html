@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pruebas JAVASCRIPT (frontend)</title>
     
-   <script> alert("Ventana de alerta") </script>
+   <script> alert("Ventana de alerta") 
+     alert("Hello world!2");
+</script>
   
     <script src="../JS/primerjavascript.js"> </script> 
 
-    <script 
+<script 
  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
  </script>
 
@@ -18,16 +20,18 @@
 <body>
     <h1> Pruebas JAVASCRIPT (frontend) </h1>
 
+    <script>
+        document.write("Hello world! Texto en el documento"); 
+        </script>
+
 <p id="texto"> Texto incial </p>
 
 <button type="submit" onclick="CAMBIAR()"> CAMBIAR </button>
 <button type="submit" onclick="INICIAR()"> INICIAR </button>
+<button type="submit" onclick="saludar()"> SALUDAR </button>
 
 <br>
-    <script>
-    document.write("Hello world! Texto en el documento"); 
-    </script>
-<br>
+
     <script>
         function CAMBIAR() {
             document.getElementById("texto").innerHTML = "Párrafo cambiado";
@@ -37,38 +41,33 @@
         document.getElementById("texto").innerHTML = "Texto inicial";
     }
     </script>
- 
- <script>
- $(document).ready(function(){ console.log('LibreríajQuerycargada');});
- </script>
-
- <script>
-     console.log("Hola")
-     console.log('en','un','lugar','de','la','Mancha'); 
-     console.info('Info');
-     console.warn('Warning');  
-     console.error('Error');
-     document.write("Texto2");
-     alert("Hello world!");
- </script>
 
 <p id="demo">Este texto no va aparecer porque automáticamente se ejecuta la función script y aparecerá hola</p>
-
 <script> 
-
 document.getElementById("demo").innerHTML="hola";
-
 </script>
 
 <script>
 
-constnombre = prompt("Escribasunombre","Escribaaquí");  
-console.log(nombre);
+const nombre = "Alejandro";
+        function saludar()  {
+document.write(nombre); 
+ }
 
-constconf=confirm("Sí o no");
+</script>
+
+<script>
+    const nombre3 = prompt("Escriba su nombre","Escriba aquí");  
+console.log(nombre3);
+
+const conf=confirm("Sí o no");
 console.log(conf);
 
 </script>
+
+<script>
+    $(document).ready(function(){ console.log('LibreríajQuerycargada');});
+    </script>
 
 <noscript>
         Losiento, tunavegador noaceptaJavaScript!

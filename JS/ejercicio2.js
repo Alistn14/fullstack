@@ -7,4 +7,10 @@ let multiplicacion = 2*3;
 //Que se ejecute dicha operación y aparezca en pantalla.
 console.log(multiplicacion);
 
+const str2="Hola a todos"
+console.log(str2)
+
 document.getElementById("resultado3").innerHTML = textoAnumero + "<br>" + numeroAtexto + "<br>" + boolAtexto ;
+
+const a=true;
+console.log(a.toString());

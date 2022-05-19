@@ -1,7 +1,8 @@
 let a=4; 
 let b=2;
 if(a>b) {console.log(`a(${a}) es mayor que b (${b})`);}
-document.write("b">"a");
+
+document.write(b>a);
 
 a =3;
 b="5";
@@ -22,3 +23,7 @@ document.write("a=b valor y tipo");
     console.log(`ELSE a (${a}) es igual en valor que b (${b})`);
     document.write("ELSE a=b solo en valor");
 }
+
+4.3>=4
+console.log(4.3>=4)
+

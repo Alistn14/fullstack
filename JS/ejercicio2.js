@@ -1,5 +1,5 @@
 //Escribe un programa en JavaScript:
-//He creado el texto Hello World! que se muestra en pantalla mediante script en html... También se puede mediante Id 
+//He creado el texto Hello World! que se muestra en pantalla mediante script en html... También se puede mediante Id es como insertar el texto
 document.getElementById("resultado2").innerHTML ="Hello World!";
 
 //segunda parte: Mostrar en pantalla la operación tal cual mediante un script.(texto)

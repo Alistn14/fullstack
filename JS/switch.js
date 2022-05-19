@@ -1,4 +1,4 @@
-const a=5;
+const a=2;
 console.log("Esta parte esta antes del switch") 
 switch(a){
     case 1:

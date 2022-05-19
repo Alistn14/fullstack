@@ -1,14 +1,13 @@
 for (let i=0;i<5;i++) {
     console.log(i);
-}
+} //aparecerán los números del 1 al 4.
  
 const array=['En','un','lugar','de','la','mancha']; 
 const len = array.length; 
-//valor 6
-
+//valor 6, se pone espacio entre comillas para espaciar entre cada palabra.
 for(let i =0; i<len; i++) {
     console.log(array[i]);
-document.write(array[i]+"");
+document.write(array[i]+" ");
 }
 
 //FOR del ejercicio 8
@@ -18,10 +17,11 @@ for (let i = 1; i <= 50; i++) {
 //Ejercicio 9 tabla de multiplicar del 5
 for (let i = 0; i<11; i++) {
     //Tabla 5x1 al 5x10
-    document.write("5x"+ i +"="+ 5*i +"<br>");
+    document.write("<br>"+ "5x"+ i +"="+ 5*i +"<br>"); //concatenación
+   
 }
 //Ejercicio 10
-let palabra= prompt("palabra");
+let palabra= prompt("Escriba una palabra");
 for (let i =0 ; i<10; i++) {
 document.write(palabra + "<br>")
 

@@ -1,11 +1,11 @@
 //Ejercicio 1, dos string que compruebe si los dos primeros caracteres son iguales.
 const string1= "Hola que tal";
 const string2= "Hola que haces";
-const laststring1=string1.length-1;//Guarda 23
-const laststring2=string2.length-1;//Guarda 12
+const laststring1=string1.length-1;//Guarda 11
+const laststring2=string2.length-1;//Guarda 13
 
 if (string1.charAt(1) == string2.charAt(1)) {
-    document.write("Los dos strings tienen los dos primeros caracteres iguales");
+    document.write("Los dos strings tienen los dos primeros caracteres iguales <br>");
 } else {
     document.write("los dos primeros caracteres son diferentes");
 }
@@ -16,7 +16,6 @@ if (string1.charAt(0) == string2.charAt(0) && (string1.charAt(laststring1)== str
 } else {
 document.write("Tienen la primera y ultima letra diferente")
 }
-
 //Ejercicio 3 pág.204 : Escribe un programa que compruebe que el substring "abc" existe en un string dado, pero no puede encontrarse ni al comienzo, ni al final.
 let ejercicio3= "abc lorem abc a abc"
 let existeABC = ejercicio3.indexOf("abc");
@@ -40,8 +39,15 @@ if (stringPos.charAt(pos) == stringPos.charAt(pos+1))
 console.log("No son iguales las letras anterior o posterior");
  
 }
-//Ejercicio 7:escribe un programa que elimine el último carácter de un string.
+//Ejercicio 7: Escribe un programa que elimine el último carácter de un string.
 let text= "Hola buenas";
 text= text.slice(0,-1)
 console.log(text);
 //Desde 0 hasta menos uno (menos la ultima letra)
+
+//indexOf
+const str="En un lugar de la mancha";
+console.log(str.indexOf('l',6));
+
+const string="Alison Triguero Naranjo"
+console.log(string.indexOf('r',8))//no entiendo bien este string

@@ -35,6 +35,39 @@ for (let i = numero ; i >=0 ; i--) {
     } else{
         document.write(i+", ")
     }
-//para quitarle la coma del final ponemos un condicional
+}
+//para quitarle la coma del final ponemos un condicional.
 
+//Ejercicio bucle WHILE Y DO-WHILE: Muestra enumeración del 1-10.
+
+let contador1=1;
+while (contador1<=10) {
+    contador1++;
+}
+console.log(contador1);
+//Este while solo muestra 1 solo valor, el 11.
+
+let contador2=1;
+while (contador2<=10) {
+    console.log(contador2);
+    contador2++;
+}
+//Aqui lo muestra 11 veces porque entra en el bucle
+
+//Este DO-WHILE muestra valores del 1 al 10.
+let contador3=1;
+do {
+    console.log(contador3);
+    contador3++;
+} while (contador3<=10);
+//las acciones se hacen mientras la condición se cumple.
+
+//TRY-CATCH
+try { adddlert('a');
+let variable=0
+console.log(variable);
+throw 'La función probada no es correcta o no existe';
+}
+catch(err) {
+    alert(err)
 }

@@ -75,3 +75,5 @@ console.log(calculo1(5));
 //forma simplificada de la función de flecha
 const calculo2=altura=>5*altura/2;
 console.log(calculo2(3));
+
+//CALLBACKS

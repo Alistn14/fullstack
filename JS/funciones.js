@@ -77,3 +77,73 @@ const calculo2=altura=>5*altura/2;
 console.log(calculo2(3));
 
 //CALLBACKS
+
+//Objetos this y arguments en una función pág.179
+
+const hacerAlgo1 = (arg1, arg2) => {
+console.log(this); //se refiere a todo el window
+// las variables se convierten en globales
+
+this.a = arg1;
+this.b = arg2;
+// a
+console.log(a);
+// b
+console.log(b);
+}
+const resultado = hacerAlgo1('pepito', 'juanito');
+// pepito
+console.log(a);
+// juanito
+console.log(b);
+// error
+//console.log(c);
+// error
+//console.log(d);
+
+//El this llamado por un objeto creado con new de una función.
+
+function hacerAlgo2(argu1, argu2) {
+    // hacerAlgo2 {}
+    console.log(this);
+    this.a = argu1;
+    this.b = argu2;
+    // Hola
+    console.log(this.a);
+    // undefined
+    console.log(this.c);
+    // error
+//console.log(a);
+    // error
+//console.log(b);
+}
+
+let resultado2 = new hacerAlgo2('Hola', 'Buenos dias');
+// Hola
+console.log(resultado2.a);
+// Buenos dias
+console.log(resultado2.b);
+// error
+//console.log(a);
+// error
+//console.log(b);
+// error
+//console.log(c);
+// error
+//console.log(d);
+
+//Objeto "arguments", establece posiciones de array:
+function saludar() { 
+//Aqui se define las posiciones de cada valor
+const saludo = arguments [0]; 
+const nombre= arguments[1];
+const apellido = arguments[2];
+//Fernández
+console.log(arguments[2]);
+//undefined
+console.log(arguments[3]);
+//Adiós, Carlos!
+console.log(saludo +"," + nombre + apellido +"!");
+}
+saludar("Adiós", "Carlos", "Fernández");
+//Aquí se definen los valores

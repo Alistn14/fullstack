@@ -3,4 +3,6 @@ var saludos = function (persona) {
 };
 var usuario = "Marcos";
 console.log(usuario);
-console.log(saludos(usuario));
+document.body.innerHTML = saludos(usuario);
+
+//El transpilado funciona como una transformación del TypeScript a JavaScript porque los navegadores web leen los archivos en este formato.

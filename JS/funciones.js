@@ -149,6 +149,9 @@ saludar("Adiós", "Carlos", "Fernández");
 //Aquí se definen los valores
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c4eb179e288537580e02fd33187d57538b1970a1
 //SCOPE
 
 function saludar() {
@@ -225,6 +228,7 @@ function varTest2() {
     console.log(x);
 }
 varTest2(); }
+<<<<<<< HEAD
 =======
 //Declaración global window.hola(), this.hola() y hola()
 
@@ -268,3 +272,5 @@ saludar3();
 
 //repasar SCOPE  funciones
 >>>>>>> e228228b7f2efb0e252e87ae36683c724b11c182
+=======
+>>>>>>> c4eb179e288537580e02fd33187d57538b1970a1

@@ -148,6 +148,7 @@ console.log(saludo +"," + nombre + apellido +"!");
 saludar("Adiós", "Carlos", "Fernández");
 //Aquí se definen los valores
 
+<<<<<<< HEAD
 //SCOPE
 
 function saludar() {
@@ -224,3 +225,46 @@ function varTest2() {
     console.log(x);
 }
 varTest2(); }
+=======
+//Declaración global window.hola(), this.hola() y hola()
+
+function hola() {
+    console.log('buenas tardes');
+    }
+    // buenas tardes
+    console.log(window.hola()); //redundante
+    // buenas tardes
+    console.log(this.hola()); //redundante
+    // buenas tardes
+    hola();
+
+    //SCOPE
+    function saludar() {
+        var edad= 14;
+    }
+    saludar();
+    //error
+    //console.log(edad); cuando esta fuera de la función deja de tener ese valor.
+
+    function saludar1() {
+        edad = 25 //este valor existe en cualquier scope. Variable global tiene SCOPE global (si no pones ni var ni let o una variable definida sera global.)
+    }
+    function saludar2() {
+        //25
+        console.log(edad);
+    }
+    saludar1();
+    saludar2();
+    //25
+    console.log(edad);
+
+    //declarar con var al principio la convierte en GLOBAL.
+    var edad = 25;
+function saludar3() {
+// 25
+console.log(edad);
+}
+saludar3();
+
+//repasar SCOPE  funciones
+>>>>>>> e228228b7f2efb0e252e87ae36683c724b11c182

@@ -26,3 +26,5 @@ import { ItemComponent } from './pages/item/item.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+// el modo de proceso siempre quedan declaradas cada proceso que se haga mediante importaciones y declaraciones.

@@ -7,9 +7,9 @@ import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 
 const app_routes: Routes=[
-    // ruta principal del local host, cuando la página esta vacía me redirige al portfolio en el local host.
-    { path: "", component: PortfolioComponent}, 
-    // Ruta de la subpágina about (sección) 
+    // ruta principal del local host, cuando la página esta vacía me redirige al portfolio en el local host al inicio.
+    { path: "inici", component: PortfolioComponent}, 
+    // Ruta de la subpágina about ahora llamada equipo (sección) 
     { path: "equip", component: AboutComponent},
     // Ruta de la subpágina item (segunda sección)
     { path: "item", component: ItemComponent},

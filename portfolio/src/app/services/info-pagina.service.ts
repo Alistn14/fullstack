@@ -15,7 +15,7 @@ export class InfoPaginaService {
     // Prueba de donde aparece
     // console.log('Servicio de infoPagina listo')
     //Leer el archivo JSON
-    this.http.get('assets/data/data-paginas.json')
+    this.http.get('assets/data/data-pagina.json')
       .subscribe( resp => {
 
         this.cargada = true;
